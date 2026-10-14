@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string_view>
+
+#include "ikloc/ikloc.hpp"
+
+int main(int argc, char* argv[]) {
+  const std::string_view name = argc > 1 ? argv[1] : "";
+  std::cout << ikloc::greet(name) << '\n';
+  return 0;
+}
